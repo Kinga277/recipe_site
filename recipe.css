@@ -5,18 +5,29 @@
 body {
     background-color: #8BA1BB;
     font-family: Arial;
+    margin: 0;
 
 }
 
-p.category {
-    background-color: black;
-    color: white;
+div.content {
+    background-color: white;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+p.description {
+    text-align: center;
+    max-width: 400px;
     display: inline-block;
-    margin-top: -15px;
-    margin-bottom: 0px;
-    padding: 8px 20px;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .center {
@@ -30,25 +41,15 @@ div.category {
     overflow: visible;
 }
 
-div.content {
-    background-color: white;
-    margin: 40px 8px 40px 8px;
-    padding: 0 8px 20px 8px;
-    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.1);
-    overflow: visible;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 12px ;
-}
-
-p.description {
-    text-align: center;
-    max-width: 400px;
+p.category {
+    background-color: black;
+    color: white;
     display: inline-block;
-    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 div.separator {
@@ -61,7 +62,7 @@ div.separator {
 }
 
 div.info {
-    position: relative;  
+    position:relative; 
 }
 
 table.info {
@@ -75,13 +76,13 @@ table.info {
 
 }
 /* all the td of the table that has a info class */
-table.info, td {
+table.info td {
     text-align: center;
     vertical-align: top;
     font-size: 12px;
 }
 
-table.info, th {
+table.info th {
     vertical-align: bottom;
     padding-bottom: 8px;
     font-size: 14px;
@@ -100,7 +101,7 @@ div.col {
     margin-top: 20px;
 }
 
-div.col h2{
+div.col h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
@@ -108,17 +109,13 @@ div.col h2{
     padding-bottom: 5px;
 }
 
-div.col1{
+div.col1 {
     display: inline-block;
-    /* margin-right: 10%; */
     margin-bottom: 20px;
 }
 
-div.col2{
-    /* float: right; */
-}
 
-div.ingredients p{
+div.ingredients p {
     border: lightgrey solid 1px;
     padding: 8px 0;
     margin-top: 4px;
@@ -127,7 +124,7 @@ div.ingredients p{
     font-size: 14px;
 }
 
-table.instructions p.number{
+table.instructions p.number {
     background-color: #6C829D;
     color: white;
     font-size: 14px;
@@ -141,18 +138,17 @@ table.instructions p.number{
     margin: 0;
 }
 
-table.instructions td.instruction_step{
+table.instructions td.instruction_step {
     padding-left: 10px;
     padding-bottom: 10px;
     font-size: 14px;
-    text-align: left;
 }
 
-table.instrunctions td{
+table.instructions td {
     vertical-align: top;
 }
 
-table.instrunctions tr{
+table.instructions tr {
     height:40px ;
 }
 
@@ -161,19 +157,20 @@ table.instrunctions tr{
 
     div.content {
         margin: 60px 10% 80px 10%;
-        padding: 0 30px 30px 30px;
+        padding: 0px 30px 30px 30px;
         min-width: 350px;
+        max-width: 650px;
     }
 
     table.info {
         height: 80px;
     }
 
-    table.info, td {
+    table.info td {
         font-size: 14px;
     }
     
-    table.info, th {
+    table.info th {
         font-size: 16px;
     }
 
@@ -181,19 +178,20 @@ table.instrunctions tr{
         width: 45%;
     }
     
-    div.col1{
+    div.col1 {
         margin-right: 10%;
     }
     
-    div.col2{
+    div.col2 {
         float: right;
     }
   }
+
 /* Very large screen */
-  @media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
     div.content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 650px;
+        width: 650px;
     }
   }
